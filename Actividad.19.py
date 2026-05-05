@@ -1,4 +1,4 @@
-print ("Hola Bienvenido ")
+print ("Hola Bienvenido amigo")
 print ("Este menú tiene 3 opciones y son las siguientes:")
 print ("1. Consultar su indice de masa corporal (MIC) ")
 print ("2. Operaciones Aritmeticas")
