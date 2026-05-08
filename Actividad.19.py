@@ -1,28 +1,29 @@
-print ("Hola Bienvenido amigo")
-print ("Este menú tiene 3 opciones y son las siguientes:")
-print ("1. Consultar su indice de masa corporal (MIC) ")
-print ("2. Operaciones Aritmeticas")
-print ("3. Salir")
-opcion = input("Digita la opcion aqui: ")
+opcion = "0"
 
-if opcion == "1":
+while opcion  !=  "3":
+    print ("Hola Bienvenido ")
+    print ("Este menú tiene 3 opciones y son las siguientes:")
+    print ("1. Consultar su indice de masa corporal (IMC) ")
+    print ("2. Operaciones Aritmeticas")
+    print ("3. Salir")
+    opcion = input("Digita la opcion aqui: ")
+
+    if opcion == "1":
      print ("HOLA ")
-     nombre = input ("Ingrese su nombre: ")
-     edad = input ("Ingrese su edad: ")
-     peso = float(input ("Ingrese su peso: "))
-     altura = float(input ("Ingrese su altura: "))
-     alturacuadrado = (altura**2)
-     print ("Bien ", nombre + " su Edad es ",  edad, "Años" " y su IMC es de ",  (peso/alturacuadrado))
-     salir1 = input ("Si deseas volver pulse 3: ")
-     while salir1 == "3":
-          print ("1. Consultar su indice de masa corporal (MIC) ")
-          print ("2. Operaciones Aritmeticas")
-          print ("3. Salir") 
-          opcion = input("Digita la opcion aqui: ")
-          break
+     nombre = input ("Ingrese su Nombre: ")
+     edad = input ("Ingrese su Edad: ")
+     peso = float(input ("Ingrese su Peso (Kg): "))
+     altura = float(input ("Ingrese su Altura (m): "))
+     imc = peso / (altura ** 2)
+     print ("Hola", nombre + " su Edad es de",  edad, "Años" " y su IMC es:", f"{imc:.2f}")
+     volver = input ("Si deseas volver pulse 3,sino cualquier tecla: ")
+     if volver != "3":
+          opcion = "3"
+          
+     
 
-elif opcion == "2":
-     print ("Aqui salen todas las Operaciones Aritmeticas")
+    elif opcion == "2":
+     print ("Hola, Aqui salen todas las Operaciones Aritmeticas")
      num1 = int(input (" Ingrese un primer numero: "))
      num2 = int(input ("Ingrese el segundo numero: ")) 
      suma = (num1+num2)
@@ -37,17 +38,14 @@ elif opcion == "2":
      print ("Su Division es: ", division)
      print ("Su Division Entera es: ", divisionE)
      print ("Su Potenciacion es: ", potenciacion)
-     salir2 = input("Si deseas volver digite 3: ")
-     while salir2 == "3":
-            print ("1. Consultar su indice de masa corporal (MIC) ")
-            print ("2. Operaciones Aritmeticas")
-            print ("3. Salir") 
-            opcion = input("Digita la opcion aqui: ")
-            break
-          
-
-else:
-      print("Saliendo")
-
-
+     volver = input("Si deseas volver digite 3, sino cualquier tecla: ")
+     if volver != "3":
+          opcion = "3"
      
+            
+    elif opcion == "3":
+     print("Saliendo, hasta luego")     
+      
+    else:
+      print("Saliendo")
+ 
