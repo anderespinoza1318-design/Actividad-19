@@ -1,5 +1,5 @@
 print("Hola")
-
+#Este Programa tine un menu de 3 opciones para consultar su indice corporal (IMC) o operaciones Aritmeticas y el 3 para salir del programa
 opcion = "0"
 
 while opcion != "3":
